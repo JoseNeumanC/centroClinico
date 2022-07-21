@@ -279,6 +279,24 @@ footer{
     font-weight: bold;
 }
 
+/* transformaciones */
+
+.img1:hover{
+    transform: scale(2);
+    transition: all 2s;
+}
+
+.img2:hover{
+    transform: scale(2);
+    transition: all 2s;
+}
+
+.img3:hover{
+    transform: scale(2);
+    transition: all 2s;
+}
+
+
 /* media queris pagina index*/
 
 @media screen and (max-width: 1024px){
