@@ -84,6 +84,12 @@ font-family 'Ultra', serif; */
 
 body{
     background-image: url(../img/imagen\ de\ fondo2.jpg);
+    position: relative;
+    padding-bottom: 3em;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
 
 }
 
@@ -183,11 +189,34 @@ header{
 
 /* ESTILO DEL FORM CONTACTO */
 
+.form{
+    margin: auto;
+}
+
 .form1{
     grid-area: form1;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+}
+
+.form-check{
+    grid-area: form1;
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    margin-left: 50px;
+}
+
+.boton{
+    grid-area: form1;
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    margin-left: 50px;
 }
 
 /* ESTILO DE LOS PARRAFOS */
@@ -270,13 +299,19 @@ footer{
     grid-area: footer;
     background-color: #E0D8B0;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 50px;
     color: black;
     font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    padding: 1em 0;
+    margin: auto;
+
+
 }
 
 /* transformaciones */
@@ -734,6 +769,15 @@ footer{
         align-items: center;
     }
 
+    footer{
+        width: 100%;
+        height: 50px;
+        position: relative;
+        bottom: 0;
+        padding: 2em 0;
+        margin: auto;
+    }
+
 }
 @media screen and (max-width: 480px){
     .grillaContacto{
@@ -761,8 +805,14 @@ footer{
         font-family: 'Ultra', serif;
     }
 
+    footer{
+        width: 100%;
+        height: 50px;
+        position: -ms-page;
+        bottom: 0;
+        padding: 1em 0;
+        margin: auto;
+    }
+
 }
-
-
-
 

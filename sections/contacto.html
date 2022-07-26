@@ -17,71 +17,103 @@
             <div class="logo">
                 <img src="../img/logo1.jpg"logo">
             </div>
-            <nav class="barraNav">
-                <ul>
-                    <li> 
-                        <a href="../index.html">INICIO</a> 
+            <nav class="navbar navbar-expand-lg navbar-light barraNav">
+                <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">INICIO</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="institucional.html">INSTITUCIONAL</a>
                     </li>
-                    <li> 
-                        <a href="institucional.html">INSTITUCIONAL</a> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">SERVICIOS</a>
                     </li>
-                    <li> 
-                        <a href="servicios.html">SERVICIOS</a> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="informacion.html">INFORMACION</a>
                     </li>
-                    <li> 
-                        <a href="informacion.html">INFORMACIÓN</a>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contacto.html">CONTACTO</a>
                     </li>
-                    <li> 
-                        <a href="contacto.html">CONTACTO</a> 
-                    </li>
-                    <li>
+                    <li class="nav-item">
                         <a href="https://www.argentina.gob.ar/salud/coronavirus-COVID-19" target="_blank"> COVID19</a>
                     </li>
-    
-                </ul>    
-            </nav> 
+                    </ul>
+                </div>
+                </div>
+            </nav>  
+
 
         <!-- cuerpo del html (contenido) -->
 
         </header>
 
-        <h1 class="titulo">NOVEDADES</h1> 
+        <h1 class="titulo">CONTACTO</h1> 
 
-    <div class="form1">
+        <form class="form">
 
-        <form>
-            <br>
-            <br>
+        <div class="input-group input-group-sm mb-3 form1">
+            <span class="input-group-text" id="inputGroup-sizing-sm">Nombre y Apellido</span>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+        </div>
 
-            <label for="nombre_apellido"> Ingrese Nombre y Apellido</label>
-            <input type="text" name="nombre_apellido"><br>
-            
-            <label for="EDAD">Indique su Edad:</label>
-            <input type="number" name="EDAD"> <br>
+        <div class="input-group input-group-sm mb-3 form1">
+            <span class="input-group-text" id="inputGroup-sizing-sm">Numero de DNI</span>
+            <input type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+        </div>
 
-            <label for="email">Indique su Mail:</label>
-            <input type="email" name="email"><br>
-            <label for="aclaracion_servicio"> Indique alguna aclaración del servicio:</label>
-            <textarea type="text" name="aclaracion_servicio"></textarea><br>
-            <input type="reset" value="Borrar Todo"><br>
-            <div><p>Indique su Sexo:</p></div>    
-            <div>Hombre</div>
-            <input type="radio" name="lado" value="Hombre"></div><br>    
-            <div>Mujer</div>
-            <input type="radio" name="lado" value="Mujer"></div>    
-            <div><p>Indique tipo de servicio:</p></div>            
-            <select class="form1" name="Tipo de Servicio">
-                <option value="1">Basico</option>
-                <option value="2">Plus</option>
-                <option value="3">Premium</option>
-            </select> 
-            <div>Acepto terminos y condiciones
-            <input type="checkbox" name="acepta" value="1"></div>
-            <br>    
-            <input type="submit" value="Enviar Solicitud">
-            
-        </form>
-    </div>
+        <div class="input-group input-group-sm mb-3 form1">
+            <span class="input-group-text" id="inputGroup-sizing-sm">Fecha de Nacimiento</span>
+            <input type="date" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+        </div>
+
+    
+        <select class="form-select form-select-sm form1" aria-label=".form-select-sm example">
+            <option selected>Seleccione Tipo de Servicio</option>
+            <option value="1">Basico</option>
+            <option value="2">Medio</option>
+            <option value="3">Premium</option>
+        </select>
+        <br>
+
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+            Acepto Terminos y Condiciones
+            </label>
+        </div>
+        <br>
+
+
+
+    <button type="button" class="btn btn-primary boton" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Enviar Solicitud
+    </button>
+
+    <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Solicitud Enviada</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                Su solicitud fue registrada satisfactoriamente. Hemos enviado un correo a su email registrado para validar su turno. <br>
+                Gracias por elegirnos.
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Guardar</button>
+                </div>
+            </div>
+            </div>
+        </div> 
+
+    </form>
+
     
     <!-- pie de pagina -->
 
