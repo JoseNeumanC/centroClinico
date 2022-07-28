@@ -104,13 +104,14 @@ header{
     align-items: center;
     width: 100%;
     height: 140px;
+    position: relative;
+    min-width: 100%;
 }
 
 .logo{
     width: 60%;
     margin-left: 30px;
-}
-
+}  
 .barraNav ul{
     display: flex;
     flex-direction: row;
@@ -260,6 +261,7 @@ header{
     justify-content: center;
     align-items: center;
     font-family: 'Alegreya Sans SC', sans-serif;
+    padding: 200px;
 }
 
 .p5{
@@ -280,8 +282,9 @@ header{
     justify-content: center;
     align-items: center;
     font-family: 'Alegreya Sans SC', sans-serif;
-    margin-left: 20%;
+    margin-left: 7%;
     margin-top: 10%;
+    padding: 50px;
 }
 
 .lista{
@@ -306,10 +309,10 @@ footer{
     height: 50px;
     color: black;
     font-weight: bold;
-    position: absolute;
-    bottom: 0;
+    position: relative;
     padding: 1em 0;
-    margin: auto;
+    top: 59em;
+    min-width: 100%;
 
 
 }
@@ -317,18 +320,23 @@ footer{
 /* transformaciones */
 
 .img1:hover{
-    transform: scale(2);
-    transition: all 2s;
+    transform: scale(1.1);
+    transition: all 4s;
 }
 
 .img2:hover{
-    transform: scale(2);
-    transition: all 2s;
+    transform: scale(1.1);
+    transition: all 4s;
 }
 
 .img3:hover{
-    transform: scale(2);
-    transition: all 2s;
+    transform: scale(1.1);
+    transition: all 4s;
+}
+
+.lista:hover{
+    transform: scale(1.2);
+    transition: all 4s;
 }
 
 
@@ -402,6 +410,12 @@ footer{
         font-family: 'Alegreya Sans SC', sans-serif;
         margin-left: 110%;
     }
+
+    .footerIndex{
+        flex-direction: row;
+        width: 59em;
+        display: flex;
+    }
 }
 
 @media screen and (max-width: 480px){
@@ -463,6 +477,12 @@ footer{
         font-size: 40px;
         font-family: 'Ultra', serif;
     }
+
+    .footerIndex{
+        flex-direction: row;
+        width: 59em;
+        display: flex;
+    }
 }
 
 /* media queris pagina institucional*/
@@ -514,7 +534,15 @@ footer{
         justify-content: center;
         align-items: center;
         font-family: 'Alegreya Sans SC', sans-serif;
+        padding: 150px;
     }
+
+    .footerInsti{
+        flex-direction: row;
+        width: 59em;
+        display: flex;
+    }
+
 
 }
 
@@ -544,6 +572,13 @@ footer{
         font-size: 40px;
         font-family: 'Ultra', serif;
     }
+
+    .footerInsti{
+        flex-direction: row;
+        width: 59em;
+        display: flex;
+    }
+
 
 }
 
@@ -597,6 +632,12 @@ footer{
         margin-left: 30%;
         margin-top: 10%;
     }
+
+    .footerServicios{
+        flex-direction: row;
+        width: 59em;
+        display: flex;
+    }
 }
 @media screen and (max-width: 480px){
     .grillaServicios{
@@ -633,6 +674,12 @@ footer{
         color: brown;
         font-size: 40px;
         font-family: 'Ultra', serif;
+    }
+
+    .footerServicios{
+        flex-direction: row;
+        width: 59em;
+        display: flex;
     }
 }
 
@@ -689,6 +736,12 @@ footer{
         margin-top: 10%;
     }
 
+    .footerInfo{
+        flex-direction: row;
+        width: 59em;
+        display: flex;
+    }
+
 }
 
 @media screen and (max-width: 480px){
@@ -729,6 +782,12 @@ footer{
         font-size: 40px;
         font-family: 'Ultra', serif;
     }
+
+    .footerInfo{
+        flex-direction: row;
+        width: 59em;
+        display: flex;
+    }
 }
 
 /* media queris pagina contacto*/
@@ -748,6 +807,16 @@ footer{
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+    }
+
+    footer{
+        width: 100%;
+        height: 50px;
+        position: -ms-page;
+        bottom: 0;
+        padding: 1em 0;
+        margin: auto;
+        flex-direction: column;
     }
 }
 
@@ -769,13 +838,10 @@ footer{
         align-items: center;
     }
 
-    footer{
-        width: 100%;
-        height: 50px;
-        position: relative;
-        bottom: 0;
-        padding: 2em 0;
-        margin: auto;
+    .footerContacto{
+        flex-direction: row;
+        width: 59em;
+        display: flex;
     }
 
 }
@@ -805,14 +871,10 @@ footer{
         font-family: 'Ultra', serif;
     }
 
-    footer{
-        width: 100%;
-        height: 50px;
-        position: -ms-page;
-        bottom: 0;
-        padding: 1em 0;
-        margin: auto;
+    .footerContato{
+        flex-direction: row;
+        width: 59em;
+        display: flex;
     }
-
 }
 
