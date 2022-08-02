@@ -1,0 +1,64 @@
+.grillaIndex{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "header header header"
+    "titulo titulo titulo"
+    "img1 img2 img3"
+    "p1 p2 p3"
+    "footer footer footer"
+    ;
+    gap: 80px;
+}
+
+.grillaInstitucional{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "header header header"
+    "titulo titulo titulo"
+    "img4 img4 img4"
+    "p4 p4 p4"
+    "footer footer footer"
+    ;
+    gap: 80px;
+}
+
+.grillaServicios{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "header header header"
+    "titulo titulo titulo"
+    "img5 img5 img5"
+    "p5 p5 p5"
+    "lista lista lista"
+    "footer footer footer"
+    ;
+    gap: 80px;
+}
+
+.grillaInfo{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "header header header"
+    "titulo titulo titulo"
+    "img6 img6 img6"
+    "p6 p6 p6"
+    "footer footer footer"
+    ;
+    gap: 80px;
+}
+
+.grillaContacto{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "header header header"
+    "titulo titulo titulo"
+    "form1 form1 form1"
+    "footer footer footer"
+    ;
+    gap: 80px;
+}

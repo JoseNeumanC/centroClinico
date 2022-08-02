@@ -1,0 +1,472 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300&family=Ultra&display=swap");
+header {
+  grid-area: header;
+  background-color: #E0D8B0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 140px;
+  position: relative;
+  min-width: 100%; }
+
+.logo {
+  width: 60%;
+  margin-left: 30px; }
+
+.barraNav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center; }
+
+.barraNav li {
+  list-style: none;
+  margin: 0 20px; }
+
+.barraNav a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold; }
+
+.titulo {
+  grid-area: titulo;
+  text-align: center;
+  color: brown;
+  font-size: 80px;
+  font-family: 'Ultra', serif; }
+
+footer {
+  grid-area: footer;
+  background-color: #E0D8B0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  color: black;
+  font-weight: bold;
+  position: relative;
+  padding: 1em 0;
+  top: 59em;
+  min-width: 100%; }
+
+body {
+  background-image: url();
+  position: relative;
+  padding-bottom: 3em;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; }
+
+.img1 {
+  grid-area: img1;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.img2 {
+  grid-area: img2;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.img3 {
+  grid-area: img3;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.p1 {
+  grid-area: p1;
+  font-weight: bold;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Alegreya Sans SC', sans-serif; }
+
+.p2 {
+  grid-area: p2;
+  font-weight: bold;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Alegreya Sans SC', sans-serif; }
+
+.p3 {
+  grid-area: p3;
+  font-weight: bold;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Alegreya Sans SC', sans-serif; }
+
+/* transformaciones */
+.img1:hover {
+  transform: scale(1.1);
+  transition: all 4s; }
+
+.img2:hover {
+  transform: scale(1.1);
+  transition: all 4s; }
+
+.img3:hover {
+  transform: scale(1.1);
+  transition: all 4s; }
+
+.grillaIndex {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "header header header" "titulo titulo titulo" "img1 img2 img3" "p1 p2 p3" "footer footer footer";
+  gap: 80px; }
+
+.grillaInstitucional {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "header header header" "titulo titulo titulo" "img4 img4 img4" "p4 p4 p4" "footer footer footer";
+  gap: 80px; }
+
+.grillaServicios {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "header header header" "titulo titulo titulo" "img5 img5 img5" "p5 p5 p5" "lista lista lista" "footer footer footer";
+  gap: 80px; }
+
+.grillaInfo {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "header header header" "titulo titulo titulo" "img6 img6 img6" "p6 p6 p6" "footer footer footer";
+  gap: 80px; }
+
+.grillaContacto {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "header header header" "titulo titulo titulo" "form1 form1 form1" "footer footer footer";
+  gap: 80px; }
+
+/* media queris pagina index*/
+@media screen and (max-width: 1024px) {
+  .grillaIndex {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "header header header" "titulo titulo titulo" "img1 img2 img3" "p1 p2 p3" "footer footer footer"; }
+  .barraNav ul {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; } }
+
+@media screen and (max-width: 768px) {
+  .grillaIndex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "header header" "titulo titulo" "img1 img2" "p1 p2" "img3 img3" "p3 p3" "footer footer"; }
+  .barraNav ul {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; }
+  .p1 {
+    grid-area: p1;
+    font-weight: bold;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Alegreya Sans SC', sans-serif; }
+  .p2 {
+    grid-area: p2;
+    font-weight: bold;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Alegreya Sans SC', sans-serif; }
+  .p3 {
+    grid-area: p3;
+    font-weight: bold;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    margin-left: 110%; }
+  .footerIndex {
+    flex-direction: row;
+    width: 59em;
+    display: flex; } }
+
+@media screen and (max-width: 480px) {
+  .grillaIndex {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "titulo" "img1" "p1" "img2" "p2" "img3" "p3" "footer"; }
+  .barraNav ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end; }
+  .p1 {
+    grid-area: p1;
+    font-weight: bold;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Alegreya Sans SC', sans-serif; }
+  .p2 {
+    grid-area: p2;
+    font-weight: bold;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Alegreya Sans SC', sans-serif; }
+  .p3 {
+    grid-area: p3;
+    font-weight: bold;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    margin-left: 10%; }
+  .titulo {
+    grid-area: titulo;
+    text-align: center;
+    color: brown;
+    font-size: 40px;
+    font-family: 'Ultra', serif; }
+  .footerIndex {
+    flex-direction: row;
+    width: 59em;
+    display: flex; } }
+
+/* media queris pagina institucional*/
+@media screen and (max-width: 1024px) {
+  .grillaInstitucional {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header header header" "titulo titulo titulo" "img4 img4 img4" "p4 p4 p4" "footer footer footer"; }
+  .barraNav ul {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; } }
+
+@media screen and (max-width: 768px) {
+  .grillaInstitucional {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "titulo" "img4" "p4" "footer"; }
+  .barraNav ul {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; }
+  .p4 {
+    grid-area: p4;
+    font-weight: bold;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    padding: 150px; }
+  .footerInsti {
+    flex-direction: row;
+    width: 59em;
+    display: flex; } }
+
+@media screen and (max-width: 480px) {
+  .grillaInstitucional {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "titulo" "img4" "p4" "footer"; }
+  .barraNav ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end; }
+  .titulo {
+    grid-area: titulo;
+    text-align: center;
+    color: brown;
+    font-size: 40px;
+    font-family: 'Ultra', serif; }
+  .footerInsti {
+    flex-direction: row;
+    width: 59em;
+    display: flex; } }
+
+/* media queris pagina servicios*/
+@media screen and (max-width: 1024px) {
+  .grillaServicios {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header header header" "titulo titulo titulo" "img5 img5 img5" "p5 p5 p5" "lista lista lista" "footer footer footer"; }
+  .barraNav ul {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; } }
+
+@media screen and (max-width: 768px) {
+  .grillaServicios {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "titulo" "img5" "p5" "lista" "footer"; }
+  .barraNav ul {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; }
+  .lista {
+    grid-area: lista;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    margin-left: 30%;
+    margin-top: 10%; }
+  .footerServicios {
+    flex-direction: row;
+    width: 59em;
+    display: flex; } }
+
+@media screen and (max-width: 480px) {
+  .grillaServicios {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "titulo" "img5" "p5" "lista" "footer"; }
+  .barraNav ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end; }
+  .lista {
+    grid-area: lista;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    margin-left: 30%;
+    margin-top: 10%; }
+  .titulo {
+    grid-area: titulo;
+    text-align: center;
+    color: brown;
+    font-size: 40px;
+    font-family: 'Ultra', serif; }
+  .footerServicios {
+    flex-direction: row;
+    width: 59em;
+    display: flex; } }
+
+/* media queris pagina informacion*/
+@media screen and (max-width: 1024px) {
+  .grillaInfo {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header header header" "titulo titulo titulo" "img6 img6 img6" "p6 p6 p6" "footer footer footer"; }
+  .barraNav ul {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; } }
+
+@media screen and (max-width: 768px) {
+  .grillaInfo {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "titulo" "img6" "p6" "footer"; }
+  .barraNav ul {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; }
+  .p6 {
+    grid-area: p6;
+    font-weight: bold;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    margin-left: 5%;
+    margin-top: 10%; }
+  .footerInfo {
+    flex-direction: row;
+    width: 59em;
+    display: flex; } }
+
+@media screen and (max-width: 480px) {
+  .grillaInfo {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "titulo" "img6" "p6" "footer"; }
+  .barraNav ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end; }
+  .p6 {
+    grid-area: p6;
+    font-weight: bold;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    margin-left: 5%;
+    margin-top: 10%; }
+  .titulo {
+    grid-area: titulo;
+    text-align: center;
+    color: brown;
+    font-size: 40px;
+    font-family: 'Ultra', serif; }
+  .footerInfo {
+    flex-direction: row;
+    width: 59em;
+    display: flex; } }
+
+/* media queris pagina contacto*/
+@media screen and (max-width: 1024px) {
+  .grillaContacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header header header" "titulo titulo titulo" "form1 form1 form1" "footer footer footer"; }
+  .barraNav ul {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; }
+  footer {
+    width: 100%;
+    height: 50px;
+    position: -ms-page;
+    bottom: 0;
+    padding: 1em 0;
+    margin: auto;
+    flex-direction: column; } }
+
+@media screen and (max-width: 768px) {
+  .grillaContacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "titulo" "form1" "footer"; }
+  .barraNav ul {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; }
+  .footerContacto {
+    flex-direction: row;
+    width: 59em;
+    display: flex; } }
+
+@media screen and (max-width: 480px) {
+  .grillaContacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "titulo" "form1" "footer"; }
+  .barraNav ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end; }
+  .titulo {
+    grid-area: titulo;
+    text-align: center;
+    color: brown;
+    font-size: 40px;
+    font-family: 'Ultra', serif; }
+  .footerContato {
+    flex-direction: row;
+    width: 59em;
+    display: flex; } }
