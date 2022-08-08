@@ -1,0 +1,28 @@
+.img6{
+    grid-area: img6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p6{
+    grid-area: p6;
+    font-weight: bold;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    margin-left: 7%;
+    margin-top: 10%;
+    padding: 50px;
+}
+
+.lista{
+    grid-area: lista;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    margin-left: 30%;
+    margin-top: 10%;
+}
