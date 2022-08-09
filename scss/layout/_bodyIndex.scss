@@ -33,21 +33,11 @@
 
 .p2{
     grid-area: p2;
-    font-weight: bold;
-    font-size: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Alegreya Sans SC', sans-serif;
+    @include medidas;
 }
 
 .p3{
     grid-area: p3;
-    font-weight: bold;
-    font-size: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Alegreya Sans SC', sans-serif;
+    @include medidas;
 }
 

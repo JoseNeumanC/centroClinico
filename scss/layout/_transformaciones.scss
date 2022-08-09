@@ -6,11 +6,9 @@
 }
 
 .img2:hover{
-    transform: scale(1.1);
-    transition: all 4s;
+    @extend .img1:hover;
 }
 
 .img3:hover{
-    transform: scale(1.1);
-    transition: all 4s;
+    @extend .img1:hover;
 }
