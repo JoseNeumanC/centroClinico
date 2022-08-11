@@ -95,8 +95,8 @@
 
     .barraNav ul{
         flex-direction: column;
-        justify-content: center;
-        align-items:flex-end;
+        justify-content: space-around;
+        align-items: flex-start;
     }
 
     .p1{
@@ -162,7 +162,7 @@
         justify-content: space-around;
         align-items: center;
     }
-}   
+    }  
 
 @media screen and (max-width: 768px){
     .grillaInstitucional{
@@ -219,8 +219,8 @@
 
     .barraNav ul{
         flex-direction: column;
-        justify-content: center;
-        align-items: flex-end;
+        justify-content: space-around;
+        align-items: flex-start;
     }
 
     .titulo{
@@ -260,7 +260,7 @@
         justify-content: space-around;
         align-items: center;
     }
-}   
+    }   
 
 @media screen and (max-width: 768px){
     .grillaServicios{
@@ -313,8 +313,8 @@
 
     .barraNav ul{
         flex-direction: column;
-        justify-content: center;
-        align-items: flex-end;
+        justify-content: space-around;
+        align-items: flex-start;
     }
 
     .lista{
@@ -360,7 +360,7 @@
         justify-content: space-around;
         align-items: center;
     }
-}
+    }
 
 @media screen and (max-width: 768px){
 
@@ -417,8 +417,8 @@
 
     .barraNav ul{
         flex-direction: column;
-        justify-content: center;
-        align-items: flex-end;
+        justify-content: space-around;
+        align-items: flex-start;
     }
 
     .p6{
@@ -461,11 +461,13 @@
         "footer footer footer"
         ;
     }
+
     .barraNav ul{
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
     }
+
 
     footer{
         width: 100%;
@@ -496,6 +498,7 @@
         align-items: center;
     }
 
+
     .footerContacto{
         flex-direction: row;
         width: 59em;
@@ -517,9 +520,10 @@
 
     .barraNav ul{
         flex-direction: column;
-        justify-content: center;
-        align-items: flex-end;
+        justify-content: space-around;
+        align-items: flex-start;
     }
+
 
     .titulo{
         grid-area: titulo;
@@ -533,5 +537,6 @@
         flex-direction: row;
         width: 59em;
         display: flex;
+        top: 100vh;
     }
 }
