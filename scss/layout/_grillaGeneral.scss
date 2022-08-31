@@ -14,6 +14,7 @@
 
 .grillaInstitucional{
     display: grid;
+    min-height: 100vh;
     grid-template-columns: 1fr;
     grid-template-areas:
     "header header header"
@@ -27,6 +28,7 @@
 
 .grillaServicios{
     display: grid;
+    min-height: 100vh;
     grid-template-columns: 1fr;
     grid-template-areas:
     "header header header"
@@ -41,6 +43,7 @@
 
 .grillaInfo{
     display: grid;
+    min-height: 100vh;
     grid-template-columns: 1fr;
     grid-template-areas:
     "header header header"
@@ -54,6 +57,7 @@
 
 .grillaContacto{
     display: grid;
+    min-height: 100vh;
     grid-template-columns: 1fr;
     grid-template-areas:
     "header header header"
@@ -62,4 +66,5 @@
     "footer footer footer"
     ;
     gap: 80px;
+    grid-template-rows: 50px 100px 1fr 50px;
 }

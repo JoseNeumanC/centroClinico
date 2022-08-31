@@ -189,27 +189,32 @@ footer {
 
 .grillaInstitucional {
   display: grid;
+  min-height: 100vh;
   grid-template-columns: 1fr;
   grid-template-areas: "header header header" "titulo titulo titulo" "img4 img4 img4" "p4 p4 p4" "footer footer footer";
   gap: 80px; }
 
 .grillaServicios {
   display: grid;
+  min-height: 100vh;
   grid-template-columns: 1fr;
   grid-template-areas: "header header header" "titulo titulo titulo" "img5 img5 img5" "p5 p5 p5" "lista lista lista" "footer footer footer";
   gap: 80px; }
 
 .grillaInfo {
   display: grid;
+  min-height: 100vh;
   grid-template-columns: 1fr;
   grid-template-areas: "header header header" "titulo titulo titulo" "img6 img6 img6" "p6 p6 p6" "footer footer footer";
   gap: 80px; }
 
 .grillaContacto {
   display: grid;
+  min-height: 100vh;
   grid-template-columns: 1fr;
   grid-template-areas: "header header header" "titulo titulo titulo" "form1 form1 form1" "footer footer footer";
-  gap: 80px; }
+  gap: 80px;
+  grid-template-rows: 50px 100px 1fr 50px; }
 
 /* media queris pagina index*/
 @media screen and (max-width: 1024px) {
