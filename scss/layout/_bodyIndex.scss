@@ -1,43 +1,30 @@
-.img1{
-    grid-area: img1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+.tarjeta-1 {
+    grid-area: tarjeta-1;
+    flex-direction: column;
+    @include center;
 }
 
-.img2{
-    grid-area: img2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.tarjeta-2 {
+    grid-area: tarjeta-2;
+    flex-direction: column;
+    @include center;
 }
 
-.img3{
-    grid-area: img3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.tarjeta-3 {
+    grid-area: tarjeta-3;
+    flex-direction: column;
+    @include center;
 }
 
-
-.p1{
-    grid-area: p1;
-    font-weight: bold;
-    font-size: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Alegreya Sans SC', sans-serif;
-}
-
-.p2{
-    grid-area: p2;
+.tarjeta--p {
     @include medidas;
+    margin-bottom: 0;
 }
 
-.p3{
-    grid-area: p3;
-    @include medidas;
+.tarjet--img {
+    width: 90%;
+    height: 40%;
+    object-fit: cover;
+    margin-bottom: 10px;
 }
 

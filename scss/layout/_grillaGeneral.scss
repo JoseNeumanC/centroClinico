@@ -1,14 +1,15 @@
 .grillaIndex{
     display: grid;
+    min-height: 100vh;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
     "header header header"
     "titulo titulo titulo"
-    "img1 img2 img3"
-    "p1 p2 p3"
+    "tarjeta-1 tarjeta-2 tarjeta-3"
     "footer footer footer"
     ;
     gap: 80px;
+    grid-template-rows: 50px 100px 1fr 50px;
 }
 
 .grillaInstitucional{

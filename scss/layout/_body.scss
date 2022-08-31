@@ -1,7 +1,8 @@
 body{
     background-image: url(../img/img2/imgfondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
-    padding-bottom: 3em;
     min-height: 100vh;
     max-width: 100%;
     display: flex;
